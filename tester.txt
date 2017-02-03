@@ -1,1 +1,2 @@
-jeg er en test. hurra.
+jeg er en test. 
+Test test.
