@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    //The base class that LevelItem will inherit from
-    public class LevelItem : LevelItemBase
+    //The base class that FloraItem and FaunaItem will inherit from
+    public abstract class FloraFaunaBase
     {
+
     }
 }
