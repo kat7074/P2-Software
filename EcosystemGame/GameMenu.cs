@@ -1,19 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EcosystemGame
 {
-    //The class used to handle the main menu of the game
-    class GameMenu
+    public partial class GameMenu : Form
     {
-        private List<LevelItem> levels = new List<LevelItem>();
-
-        public void DrawMenu()
+        public GameMenu()
         {
-            
+            InitializeComponent();
+        }
+
+        private void StartGame_Click(object sender, EventArgs e)
+        {
+            GameWindow gameW = new GameWindow();
+            this.Hide();
+            gameW.Show();
+        }
+
+        private void ExitGame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

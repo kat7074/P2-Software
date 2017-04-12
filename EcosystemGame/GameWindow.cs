@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EcosystemGame
 {
-    public partial class TestForm : Form
+    public partial class GameWindow : Form
     {
-        public TestForm()
+        public GameWindow()
         {
             InitializeComponent();
         }
