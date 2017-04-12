@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    public abstract class LevelItemBase
+    public interface ILevel
     {
-        //Start variables for the level
-        public string gameObjective;
-        public int startNutrients;
-        public int startSeason;
+        // Start variables for the level.
+        string gameObjective { get; }
+        int startNutrients { get; }
+        int startSeason { get; }
 
-        //Lists containing a list of the differet species of flora and fauna the level starts with
-        public List<List<FaunaItem>> startFauna;
-        public List<List<FloraItem>> startFlora; 
+        // Lists containing a list of the differet species of flora and fauna the level starts with.
+        List<List<FaunaItem>> startFauna { get; }
+        List<List<FloraItem>> startFlora { get; }
+
+        // Method to check if the objective has been completed.
+        bool CheckObjective();
     }
 }
