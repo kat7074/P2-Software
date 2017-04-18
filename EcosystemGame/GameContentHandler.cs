@@ -30,42 +30,5 @@ namespace EcosystemGame
             myFFHandler.UpdateFloraAndFauna();
             myResourceHandler.UpdateResources();
         }
-
-        class FloraFaunaHandler
-        {
-            // Will be used 
-            public void UpdateFloraAndFauna()
-            {
-
-            }
-
-            private void AddFauna()
-            {
-
-            }
-
-            private void AddFlora()
-            {
-
-            }
-
-            private void RemoveFauna()
-            {
-
-            }
-
-            private void RemoveFlora()
-            {
-
-            }
-        }
-
-        class ResourceHandler
-        {
-            public void UpdateResources()
-            {
-
-            }
-        }
     }
 }
