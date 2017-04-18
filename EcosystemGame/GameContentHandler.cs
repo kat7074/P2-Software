@@ -9,6 +9,9 @@ namespace EcosystemGame
     // The class used to load and unload content described by the start parameters of a LevelItem.
     public class GameContentHandler
     {
+        FloraFaunaHandler myFFHandler = new FloraFaunaHandler();
+        ResourceHandler myResourceHandler = new ResourceHandler();
+
         // LoadContent will be executed when a level has been selected from the GameMenu.
         public void LoadContent()
         {
@@ -24,17 +27,45 @@ namespace EcosystemGame
         // UpdateContent will be used when a turn ends, to update all the different variables depending on what actons have been taken.
         public void UpdateContent()
         {
-
+            myFFHandler.UpdateFloraAndFauna();
+            myResourceHandler.UpdateResources();
         }
 
-        private class FloraFaunaHandler
+        class FloraFaunaHandler
         {
+            // Will be used 
+            public void UpdateFloraAndFauna()
+            {
 
+            }
+
+            private void AddFauna()
+            {
+
+            }
+
+            private void AddFlora()
+            {
+
+            }
+
+            private void RemoveFauna()
+            {
+
+            }
+
+            private void RemoveFlora()
+            {
+
+            }
         }
 
-        private class ResourceHandler
+        class ResourceHandler
         {
+            public void UpdateResources()
+            {
 
+            }
         }
     }
 }
