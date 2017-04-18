@@ -16,6 +16,7 @@ namespace EcosystemGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Runs the GameMenu form.
             Application.Run(new GameMenu());
         }
     }

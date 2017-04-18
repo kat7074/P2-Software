@@ -16,5 +16,15 @@ namespace EcosystemGame
         {
             InitializeComponent();
         }
+
+        private void exitGame_Click(object sender, EventArgs e)
+        {
+            GameMenu gameM = new GameMenu();
+
+            // Hides the GameMenu form.
+            this.Hide();
+            // Shows the GameWindow form.
+            gameM.Show();
+        }
     }
 }
