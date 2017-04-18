@@ -6,29 +6,29 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    class FloraFaunaHandler
+    public class FloraFaunaHandler
     {
         public void UpdateFloraAndFauna()
         {
 
         }
 
-        private void AddFauna()
+        public void AddFauna()
         {
 
         }
 
-        private void AddFlora()
+        public void AddFlora()
         {
 
         }
 
-        private void RemoveFauna()
+        public void RemoveFauna()
         {
 
         }
 
-        private void RemoveFlora()
+        public void RemoveFlora()
         {
 
         }

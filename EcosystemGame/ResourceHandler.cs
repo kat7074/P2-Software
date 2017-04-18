@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    class ResourceHandler
+    public class ResourceHandler
     {
         public void UpdateResources()
         {
