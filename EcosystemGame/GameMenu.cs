@@ -19,8 +19,12 @@ namespace EcosystemGame
 
         private void StartGame_Click(object sender, EventArgs e)
         {
+            // Creates a new instance of GameWindow.
             GameWindow gameW = new GameWindow();
+
+            // Hides the GameMenu form.
             this.Hide();
+            // Shows the GameWindow form.
             gameW.Show();
         }
 
