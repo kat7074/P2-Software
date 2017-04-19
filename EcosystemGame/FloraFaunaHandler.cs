@@ -8,14 +8,30 @@ namespace EcosystemGame
 {
     public class FloraFaunaHandler
     {
+
+        List<FloraItem> testList = new List<FloraItem>();
+
         public void UpdateFloraAndFauna()
         {
 
         }
 
-        public void AddFauna()
+        public void AddFauna(string Type)
         {
-
+            switch (Type)
+            {
+                case "Trout":
+                    HerbivorousFauna troutTest = new HerbivorousFauna("Troutname", 1, 1, 1, 1);
+                    testList.Add(troutTest);
+                    Console.WriteLine(testList[0].name);
+                    break;
+                case "XFish":
+                    break;
+                case "XFlora":
+                    break;
+                default:
+                    break;
+            }
         }
 
         public void AddFlora()
@@ -49,14 +65,20 @@ namespace EcosystemGame
 
             private void Multiply()
             {
+                
+            }
+
+            // For updating the Fauna stats, after each round. 
+            private void Update()
+            {
 
             }
         }
 
         // Works just like the Carnivorous fauna, but has a different method for feeding.
-        private class HerbivorousFauna : FloraItem
+        public class HerbivorousFauna : FloraItem
         {
-            private HerbivorousFauna(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, MinimumTemp, MaximumTemp, RequiredNutrition)
+            public HerbivorousFauna(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, MinimumTemp, MaximumTemp, RequiredNutrition)
             {
 
             }

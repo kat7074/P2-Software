@@ -26,5 +26,12 @@ namespace EcosystemGame
             // Shows the GameWindow form.
             gameM.Show();
         }
+
+        private void devButton_Click(object sender, EventArgs e)
+        {
+            FloraFaunaHandler ffTest = new FloraFaunaHandler();
+            ffTest.AddFauna("Trout");
+            
+        }
     }
 }

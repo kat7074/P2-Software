@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.exitGameButton = new System.Windows.Forms.Button();
+            this.devButton = new System.Windows.Forms.Button();
+            this.devText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // exitGameButton
@@ -41,21 +43,43 @@
             this.exitGameButton.UseVisualStyleBackColor = true;
             this.exitGameButton.Click += new System.EventHandler(this.exitGame_Click);
             // 
+            // devButton
+            // 
+            this.devButton.Location = new System.Drawing.Point(149, 148);
+            this.devButton.Name = "devButton";
+            this.devButton.Size = new System.Drawing.Size(453, 213);
+            this.devButton.TabIndex = 1;
+            this.devButton.Text = "DEV BUTTON";
+            this.devButton.UseVisualStyleBackColor = true;
+            this.devButton.Click += new System.EventHandler(this.devButton_Click);
+            // 
+            // devText
+            // 
+            this.devText.Location = new System.Drawing.Point(182, 367);
+            this.devText.Name = "devText";
+            this.devText.Size = new System.Drawing.Size(388, 26);
+            this.devText.TabIndex = 2;
+            // 
             // GameWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1456, 859);
+            this.Controls.Add(this.devText);
+            this.Controls.Add(this.devButton);
             this.Controls.Add(this.exitGameButton);
             this.Name = "GameWindow";
             this.Text = "GameWindow";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button exitGameButton;
+        private System.Windows.Forms.Button devButton;
+        private System.Windows.Forms.TextBox devText;
     }
 }
