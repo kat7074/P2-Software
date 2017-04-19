@@ -24,5 +24,15 @@ namespace EcosystemGame
         public int minimumTemp { get; }
         public int maximumTemp { get; }
         public int growthLevel { get; }
+
+        public void Feed()
+        {
+
+        }
+
+        public void Multiply()
+        {
+
+        }
     }
 }
