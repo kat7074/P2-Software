@@ -8,11 +8,21 @@ namespace EcosystemGame
 {
     public class FloraItem : IFloraFauna
     {
-        string name { get; }
-        int health { get; }
-        int minimumOxygen { get; }
-        int minimumTemp { get; }
-        int maximumTemp { get; }
-        int growthLevel { get; }
+        public FloraItem(string Name, int Health, int MinimumOxygen, int MinimumTemp, int MaximumTemp)
+        {
+            this.name = Name;
+            this.health = Health;
+            this.minimumOxygen = MinimumOxygen;
+            this.minimumTemp = MinimumTemp;
+            this.maximumTemp = MaximumTemp;
+            this.growthLevel = 0;
+        }
+
+        public string name { get; }
+        public int health { get; }
+        public int minimumOxygen { get; }
+        public int minimumTemp { get; }
+        public int maximumTemp { get; }
+        public int growthLevel { get; }
     }
 }
