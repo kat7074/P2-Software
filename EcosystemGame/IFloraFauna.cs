@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    public class FloraItem : IFloraFauna
+    public interface IFloraFauna
     {
         string name { get; }
         int health { get; }

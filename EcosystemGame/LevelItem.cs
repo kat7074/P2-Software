@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    // Holds all the different LevelItems
+    // Holds all the different LevelItems. 
     public class LevelItems
     {
-
+        // The first level of the game.
         public class LevelItemOne : ILevel
         {
+            public LevelItemOne()
+            {
+                List<FaunaItem> startPikes = new List<FaunaItem>();
+            }
             public string gameObjective { get { return "Add 5 Flora and Fauna to the system"; } }
             public int startNutrients { get { return 1; } }
             public int startSeason { get { return 1; } }
 
+            // A list of lists of Fauna or FloraItems, that the level starts with. 
             public List<List<FaunaItem>> startFauna { get { return new List<List<FaunaItem>>(); } }
             public List<List<FloraItem>> startFlora { get { return new List<List<FloraItem>>(); } }
 
