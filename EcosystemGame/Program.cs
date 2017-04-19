@@ -14,6 +14,7 @@ namespace EcosystemGame
         [STAThread]
         static void Main()
         {
+            // Enables visual styles for the application (colors, fonts etc.).
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Runs the GameMenu form.

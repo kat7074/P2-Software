@@ -41,6 +41,16 @@ namespace EcosystemGame
             {
 
             }
+
+            private void Feed()
+            {
+
+            }
+
+            private void Multiply()
+            {
+
+            }
         }
 
         // Works just like the Carnivorous fauna, but has a different method for feeding.
@@ -50,13 +60,36 @@ namespace EcosystemGame
             {
 
             }
+
+            private void Feed()
+            {
+
+            }
+
+            private void Multiply()
+            {
+
+            }
         }
         #endregion
 
         #region Flora
-        private class Shoreweed
+        private class Flora : FloraItem
         {
+            private Flora(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, MinimumTemp, MaximumTemp, RequiredNutrition)
+            {
 
+            }
+
+            private void Feed()
+            {
+
+            }
+
+            private void Multiply()
+            {
+
+            }
         }
         #endregion
     }
