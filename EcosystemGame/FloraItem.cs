@@ -6,33 +6,26 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    public class FloraItem : IFloraFauna
+    public abstract class FloraItem : IFloraFauna
     {
-        public FloraItem(string Name, int Health, int MinimumOxygen, int MinimumTemp, int MaximumTemp)
+        // The constructor for when a new FloraItem is created.
+        public FloraItem(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition)
         {
             this.name = Name;
-            this.health = Health;
+            this.health = 100;
             this.minimumOxygen = MinimumOxygen;
             this.minimumTemp = MinimumTemp;
             this.maximumTemp = MaximumTemp;
             this.growthLevel = 0;
+            this.requiredNutrition = RequiredNutrition;
         }
 
-        public string name { get; }
-        public int health { get; }
-        public int minimumOxygen { get; }
-        public int minimumTemp { get; }
-        public int maximumTemp { get; }
-        public int growthLevel { get; }
-
-        public void Feed()
-        {
-
-        }
-
-        public void Multiply()
-        {
-
-        }
+        public virtual string name { get; }
+        public virtual int health { get; }
+        public virtual int minimumOxygen { get; }
+        public virtual int minimumTemp { get; }
+        public virtual int maximumTemp { get; }
+        public virtual int growthLevel { get; }
+        public virtual int requiredNutrition { get; }
     }
 }

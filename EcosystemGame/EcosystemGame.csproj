@@ -63,6 +63,7 @@
     <Compile Include="GameWindow.Designer.cs">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="IFloraFauna.cs" />
     <Compile Include="LevelItem.cs" />
     <Compile Include="LevelItemBase.cs" />
     <Compile Include="Program.cs" />

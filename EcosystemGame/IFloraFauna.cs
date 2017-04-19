@@ -14,5 +14,6 @@ namespace EcosystemGame
         int minimumTemp { get; }
         int maximumTemp { get; }
         int growthLevel { get; }
+        int requiredNutrition { get; }
     }
 }
