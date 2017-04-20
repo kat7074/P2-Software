@@ -46,8 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FaunaItem.cs" />
-    <Compile Include="FloraFaunaBase.cs" />
     <Compile Include="FloraFaunaHandler.cs" />
     <Compile Include="FloraItem.cs" />
     <Compile Include="GameContentHandler.cs" />

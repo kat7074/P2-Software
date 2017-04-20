@@ -59,7 +59,7 @@ namespace EcosystemGame
         private class CarnivorousFauna : FloraItem
         {
             // Here the base constructor from FloraItem is used, since this is shared for all flora and fauna.
-            private CarnivorousFauna(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, MinimumTemp, MaximumTemp, RequiredNutrition)
+            private CarnivorousFauna(string Name, int MinimumOxygen, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
             {
 
             }
@@ -104,7 +104,7 @@ namespace EcosystemGame
         #region Flora
         private class Flora : FloraItem
         {
-            private Flora(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
+            private Flora(string Name, int MinimumOxygen, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
             {
 
             }

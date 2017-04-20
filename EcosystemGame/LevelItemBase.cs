@@ -14,7 +14,7 @@ namespace EcosystemGame
         int startSeason { get; }
 
         // Lists containing a list of the differet species of flora and fauna the level starts with.
-        List<List<FaunaItem>> startFauna { get; }
+        List<List<FloraItem>> startFauna { get; }
         List<List<FloraItem>> startFlora { get; }
 
         // Method to check if the objective has been completed.
