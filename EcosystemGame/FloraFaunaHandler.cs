@@ -8,9 +8,11 @@ namespace EcosystemGame
 {
     public class FloraFaunaHandler
     {
-
+        // Til gruppe: Liste over alle fisk i søen. Skal nok hede noget andet end testList.
         public List<FloraItem> testList = new List<FloraItem>();
 
+        // Checks the list of FloraItems, and executes the feed and multiply methods for each FloraItem, if the parameters are reached
+        // It will also remove any fish that is bellow zero health. 
         public void UpdateFloraAndFauna()
         {
 
@@ -23,8 +25,10 @@ namespace EcosystemGame
             switch (Type.ToLower())
             {
                 case "trout":
-                    HerbivorousFauna troutTest = new HerbivorousFauna("Troutname", 1, 1, 1, 1);
+                    // Det nedstående er en test, for at tilføje en trout til listen. 1,1 er bare placeholder værdier.
+                    HerbivorousFauna troutTest = new HerbivorousFauna("Troutname", 1, 1);
                     testList.Add(troutTest);
+                    // For at se om den er tilføjet.
                     Console.WriteLine(testList[0].name);
                     break;
                 case "xfish":
@@ -80,7 +84,7 @@ namespace EcosystemGame
         // Works just like the Carnivorous fauna, but has a different method for feeding.
         public class HerbivorousFauna : FloraItem
         {
-            public HerbivorousFauna(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, MinimumTemp, MaximumTemp, RequiredNutrition)
+            public HerbivorousFauna(string Name, int MinimumOxygen, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
             {
 
             }
@@ -100,7 +104,7 @@ namespace EcosystemGame
         #region Flora
         private class Flora : FloraItem
         {
-            private Flora(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, MinimumTemp, MaximumTemp, RequiredNutrition)
+            private Flora(string Name, int MinimumOxygen, int MinimumTemp, int MaximumTemp, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
             {
 
             }
