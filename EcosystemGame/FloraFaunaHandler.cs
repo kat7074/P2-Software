@@ -9,7 +9,7 @@ namespace EcosystemGame
     public class FloraFaunaHandler
     {
 
-        List<FloraItem> testList = new List<FloraItem>();
+        public List<FloraItem> testList = new List<FloraItem>();
 
         public void UpdateFloraAndFauna()
         {
@@ -18,16 +18,18 @@ namespace EcosystemGame
 
         public void AddFauna(string Type)
         {
-            switch (Type)
+            // Til gruppen: Jeg tænker lidt at den har kan tage en string som parameter, så den knap der tilføjer f. eks. trout,
+            // kalder bare AddFaune("trout").
+            switch (Type.ToLower())
             {
-                case "Trout":
+                case "trout":
                     HerbivorousFauna troutTest = new HerbivorousFauna("Troutname", 1, 1, 1, 1);
                     testList.Add(troutTest);
                     Console.WriteLine(testList[0].name);
                     break;
-                case "XFish":
+                case "xfish":
                     break;
-                case "XFlora":
+                case "xflora":
                     break;
                 default:
                     break;

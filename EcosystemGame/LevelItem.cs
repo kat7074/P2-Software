@@ -18,6 +18,7 @@ namespace EcosystemGame
             }
             public string gameObjective { get { return "Add 5 Flora and Fauna to the system"; } }
             public int startNutrients { get { return 1; } }
+            // 1 er Januar.
             public int startSeason { get { return 1; } }
 
             // A list of lists of Fauna or FloraItems, that the level starts with. 
