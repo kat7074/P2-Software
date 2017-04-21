@@ -30,7 +30,6 @@
         {
             this.exitGameButton = new System.Windows.Forms.Button();
             this.devButton = new System.Windows.Forms.Button();
-            this.devText = new System.Windows.Forms.TextBox();
             this.nextTurnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,13 +53,6 @@
             this.devButton.UseVisualStyleBackColor = true;
             this.devButton.Click += new System.EventHandler(this.devButton_Click);
             // 
-            // devText
-            // 
-            this.devText.Location = new System.Drawing.Point(182, 367);
-            this.devText.Name = "devText";
-            this.devText.Size = new System.Drawing.Size(388, 26);
-            this.devText.TabIndex = 2;
-            // 
             // nextTurnButton
             // 
             this.nextTurnButton.Location = new System.Drawing.Point(1317, 27);
@@ -78,13 +70,11 @@
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1456, 859);
             this.Controls.Add(this.nextTurnButton);
-            this.Controls.Add(this.devText);
             this.Controls.Add(this.devButton);
             this.Controls.Add(this.exitGameButton);
             this.Name = "GameWindow";
             this.Text = "GameWindow";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -92,7 +82,6 @@
 
         private System.Windows.Forms.Button exitGameButton;
         private System.Windows.Forms.Button devButton;
-        private System.Windows.Forms.TextBox devText;
         private System.Windows.Forms.Button nextTurnButton;
     }
 }

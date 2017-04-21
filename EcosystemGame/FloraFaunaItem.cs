@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace EcosystemGame
 {
-    public abstract class FloraItem : IFloraFauna
+    public abstract class FloraFaunaItem : IFloraFauna
     {
         // The constructor for when a new FloraItem is created.
-        public FloraItem(string Name, int MinimumOxygen, int RequiredNutrition)
+        public FloraFaunaItem(string Name, int MinimumOxygen, int RequiredNutrition)
         {
             this.name = Name;
             this.health = 100;

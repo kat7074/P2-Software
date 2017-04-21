@@ -22,8 +22,8 @@ namespace EcosystemGame
             public int startSeason { get { return 1; } }
 
             // A list of lists of Fauna or FloraItems, that the level starts with. 
-            public List<List<FloraItem>> startFauna { get { return new List<List<FloraItem>>(); } }
-            public List<List<FloraItem>> startFlora { get { return new List<List<FloraItem>>(); } }
+            public List<List<FloraFaunaItem>> startFauna { get { return new List<List<FloraFaunaItem>>(); } }
+            public List<List<FloraFaunaItem>> startFlora { get { return new List<List<FloraFaunaItem>>(); } }
 
             public bool CheckObjective()
             {
