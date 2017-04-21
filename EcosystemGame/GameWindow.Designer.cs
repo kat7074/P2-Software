@@ -31,6 +31,7 @@
             this.exitGameButton = new System.Windows.Forms.Button();
             this.devButton = new System.Windows.Forms.Button();
             this.devText = new System.Windows.Forms.TextBox();
+            this.nextTurnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // exitGameButton
@@ -60,12 +61,23 @@
             this.devText.Size = new System.Drawing.Size(388, 26);
             this.devText.TabIndex = 2;
             // 
+            // nextTurnButton
+            // 
+            this.nextTurnButton.Location = new System.Drawing.Point(1317, 27);
+            this.nextTurnButton.Name = "nextTurnButton";
+            this.nextTurnButton.Size = new System.Drawing.Size(127, 56);
+            this.nextTurnButton.TabIndex = 3;
+            this.nextTurnButton.Text = "Next Turn";
+            this.nextTurnButton.UseVisualStyleBackColor = true;
+            this.nextTurnButton.Click += new System.EventHandler(this.nextTurnButton_Click);
+            // 
             // GameWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1456, 859);
+            this.Controls.Add(this.nextTurnButton);
             this.Controls.Add(this.devText);
             this.Controls.Add(this.devButton);
             this.Controls.Add(this.exitGameButton);
@@ -81,5 +93,6 @@
         private System.Windows.Forms.Button exitGameButton;
         private System.Windows.Forms.Button devButton;
         private System.Windows.Forms.TextBox devText;
+        private System.Windows.Forms.Button nextTurnButton;
     }
 }

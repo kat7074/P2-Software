@@ -33,5 +33,12 @@ namespace EcosystemGame
             ffTest.AddFauna("Trout");
             
         }
+
+        private void nextTurnButton_Click(object sender, EventArgs e)
+        {
+            // Til gruppe: Denne funktion er vores next turn metode.
+            // Til debug:
+            Console.WriteLine("Next turn pressed");
+        }
     }
 }
