@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FloraFaunaHandler.cs" />
-    <Compile Include="FloraItem.cs" />
+    <Compile Include="FloraFaunaItem.cs" />
     <Compile Include="GameContentHandler.cs" />
     <Compile Include="GameMenu.cs">
       <SubType>Form</SubType>
@@ -62,7 +62,7 @@
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="IFloraFauna.cs" />
-    <Compile Include="LevelItem.cs" />
+    <Compile Include="LevelItems.cs" />
     <Compile Include="ILevel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
