@@ -31,13 +31,15 @@
             this.exitGameButton = new System.Windows.Forms.Button();
             this.devButton = new System.Windows.Forms.Button();
             this.nextTurnButton = new System.Windows.Forms.Button();
+            this.addFaunaButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // exitGameButton
             // 
-            this.exitGameButton.Location = new System.Drawing.Point(1317, 786);
+            this.exitGameButton.Location = new System.Drawing.Point(878, 511);
+            this.exitGameButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exitGameButton.Name = "exitGameButton";
-            this.exitGameButton.Size = new System.Drawing.Size(127, 61);
+            this.exitGameButton.Size = new System.Drawing.Size(85, 40);
             this.exitGameButton.TabIndex = 0;
             this.exitGameButton.Text = "Exit to Menu";
             this.exitGameButton.UseVisualStyleBackColor = true;
@@ -45,9 +47,10 @@
             // 
             // devButton
             // 
-            this.devButton.Location = new System.Drawing.Point(149, 148);
+            this.devButton.Location = new System.Drawing.Point(99, 96);
+            this.devButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.devButton.Name = "devButton";
-            this.devButton.Size = new System.Drawing.Size(453, 213);
+            this.devButton.Size = new System.Drawing.Size(302, 138);
             this.devButton.TabIndex = 1;
             this.devButton.Text = "DEV BUTTON";
             this.devButton.UseVisualStyleBackColor = true;
@@ -55,23 +58,36 @@
             // 
             // nextTurnButton
             // 
-            this.nextTurnButton.Location = new System.Drawing.Point(1317, 27);
+            this.nextTurnButton.Location = new System.Drawing.Point(878, 18);
+            this.nextTurnButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nextTurnButton.Name = "nextTurnButton";
-            this.nextTurnButton.Size = new System.Drawing.Size(127, 56);
+            this.nextTurnButton.Size = new System.Drawing.Size(85, 36);
             this.nextTurnButton.TabIndex = 3;
             this.nextTurnButton.Text = "Next Turn";
             this.nextTurnButton.UseVisualStyleBackColor = true;
             this.nextTurnButton.Click += new System.EventHandler(this.nextTurnButton_Click);
             // 
+            // addFaunaButton
+            // 
+            this.addFaunaButton.Location = new System.Drawing.Point(877, 254);
+            this.addFaunaButton.Name = "addFaunaButton";
+            this.addFaunaButton.Size = new System.Drawing.Size(85, 36);
+            this.addFaunaButton.TabIndex = 5;
+            this.addFaunaButton.Text = "Add Fauna";
+            this.addFaunaButton.UseVisualStyleBackColor = true;
+            this.addFaunaButton.Click += new System.EventHandler(this.addFaunaButton_Click);
+            // 
             // GameWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(1456, 859);
+            this.ClientSize = new System.Drawing.Size(974, 558);
+            this.Controls.Add(this.addFaunaButton);
             this.Controls.Add(this.nextTurnButton);
             this.Controls.Add(this.devButton);
             this.Controls.Add(this.exitGameButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GameWindow";
             this.Text = "GameWindow";
             this.ResumeLayout(false);
@@ -83,5 +99,6 @@
         private System.Windows.Forms.Button exitGameButton;
         private System.Windows.Forms.Button devButton;
         private System.Windows.Forms.Button nextTurnButton;
+        private System.Windows.Forms.Button addFaunaButton;
     }
 }

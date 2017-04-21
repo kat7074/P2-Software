@@ -27,10 +27,10 @@ namespace EcosystemGame
             gameM.Show();
         }
 
+        // Knap til at teste forskellige ting. 
         private void devButton_Click(object sender, EventArgs e)
         {
-            FloraFaunaHandler ffTest = new FloraFaunaHandler();
-            ffTest.AddFauna("Trout");
+            
             
         }
 
@@ -39,6 +39,16 @@ namespace EcosystemGame
             // Til gruppe: Denne funktion er vores next turn metode.
             // Til debug:
             Console.WriteLine("Next turn pressed");
+        }
+
+        private void addFaunaButton_Click(object sender, EventArgs e)
+        {
+            // Creates a new instance of the FaunaSelector form.
+            GameWindowFaunaSelector faunaSelector = new GameWindowFaunaSelector();
+            // Sets the parent of the FaunaSelector to the GameWindow.
+            //faunaSelector.MdiParent = this;
+            // Shows the form.
+            faunaSelector.ShowDialog();
         }
     }
 }
