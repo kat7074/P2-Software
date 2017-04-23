@@ -41,8 +41,9 @@
             this.addFishButton01.Name = "addFishButton01";
             this.addFishButton01.Size = new System.Drawing.Size(142, 52);
             this.addFishButton01.TabIndex = 1;
-            this.addFishButton01.Text = "Add Fish 1";
+            this.addFishButton01.Text = "Add one Eel";
             this.addFishButton01.UseVisualStyleBackColor = true;
+            this.addFishButton01.Click += new System.EventHandler(this.addEelButton_Click);
             // 
             // addFishButton02
             // 

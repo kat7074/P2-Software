@@ -21,5 +21,10 @@ namespace EcosystemGame
         {
             Application.Exit();
         }
+
+        private void addEelButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

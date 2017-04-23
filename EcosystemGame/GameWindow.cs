@@ -45,9 +45,7 @@ namespace EcosystemGame
         {
             // Creates a new instance of the FaunaSelector form.
             GameWindowFaunaSelector faunaSelector = new GameWindowFaunaSelector();
-            // Sets the parent of the FaunaSelector to the GameWindow.
-            //faunaSelector.MdiParent = this;
-            // Shows the form.
+            // Shows the form as a dialog, this ensures that the button can't be pressed again, before the new form has been closed.
             faunaSelector.ShowDialog();
         }
     }
