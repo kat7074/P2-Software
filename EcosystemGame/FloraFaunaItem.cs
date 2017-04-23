@@ -9,19 +9,23 @@ namespace EcosystemGame
     public abstract class FloraFaunaItem : IFloraFauna
     {
         // The constructor for when a new FloraItem is created.
-        public FloraFaunaItem(string Name, int MinimumOxygen, int RequiredNutrition)
+        public FloraFaunaItem(string Name, int MinimumOxygen, int RequiredNutrition,int releasedOxygen, int maxHealth, int reproduceLevel)
         {
             this.name = Name;
             this.health = 100;
+            this.maxHealth = maxHealth; 
             this.minimumOxygen = MinimumOxygen;
-            this.growthLevel = 0;
+            this.reproduceLevel = reproduceLevel;
             this.requiredNutrition = RequiredNutrition;
+            this.releasedOxygen = releasedOxygen;
         }
 
         public virtual string name { get; }
         public virtual int health { get; }
         public virtual int minimumOxygen { get; }
-        public virtual int growthLevel { get; }
+        public virtual int reproduceLevel { get; }
         public virtual int requiredNutrition { get; }
+        public virtual int releasedOxygen { get; }
+        public virtual int maxHealth { get; }
     }
 }
