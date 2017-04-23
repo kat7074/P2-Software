@@ -12,6 +12,8 @@ namespace EcosystemGame
         string gameObjective { get; }
         int startNutrients { get; }
         int startSeason { get; }
+        int startOxygen { get; }
+        
 
         // Lists containing a list of the differet species of flora and fauna the level starts with.
         List<List<FloraFaunaItem>> startFauna { get; }
@@ -21,3 +23,7 @@ namespace EcosystemGame
         bool CheckObjective();
     }
 }
+/* tror at denne metode virker til range
+        [Range(1,14)]
+        public int size { get; set; }
+*/
