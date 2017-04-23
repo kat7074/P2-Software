@@ -25,6 +25,17 @@ namespace EcosystemGame
             // Ues ToLower, to ensure that the input is always lowercase.
             switch (Type.ToLower())
             {
+                case "eel":
+                    // Er den her herbivore eller carnivore? o.o'
+                    break;
+                case "pike":
+                    // CarnivorousFauna testPike = new CarnivorousFauna("Pike", 1, 1, 1, 1, 1);
+                    // testList.Add(testPike);
+                    // Console.WriteLine(testList[0].name);
+                    break;
+                case "perch":
+                    // Kan kategoriseres som både herbivore og carnivore? :o
+                    break;
                 case "trout":
                     // Det nedstående er en test, for at tilføje en trout til listen. 1,1 er bare placeholder værdier.
                     HerbivorousFauna testTrout = new HerbivorousFauna("Trout", 1, 1, 1, 1, 1);
@@ -37,9 +48,19 @@ namespace EcosystemGame
             }
         }
 
-        public void AddFlora()
+        public void AddFlora(string Type)
         {
-
+            switch(Type.ToLower())
+            {
+                case "quillwort":
+                    break;
+                case "shoreweed":
+                    break;
+                case "t-stonewort":
+                    break;
+                case "w-stonewort":
+                    break;
+            }
         }
 
         public void RemoveFauna()
