@@ -12,10 +12,20 @@ namespace EcosystemGame
         public List<FloraFaunaItem> testList = new List<FloraFaunaItem>();
 
         // Checks the list of FloraItems, and executes the feed and multiply methods for each FloraItem, if the parameters are reached
-        // It will also remove any fish that is bellow zero health. 
+        // It will also remove any fish that is below zero health. 
         public void UpdateFloraAndFauna()
         {
-
+            foreach (var item in testList)
+            {
+                if (item.health < 0)
+                {
+                    testList.Remove(item);
+                }
+                else
+                {
+                    
+                }
+            }
         }
 
         public void AddFauna(string Type)
