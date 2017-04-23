@@ -27,14 +27,10 @@ namespace EcosystemGame
             {
                 case "trout":
                     // Det nedstående er en test, for at tilføje en trout til listen. 1,1 er bare placeholder værdier.
-                    HerbivorousFauna troutTest = new HerbivorousFauna("Troutname", 1, 1);
-                    testList.Add(troutTest);
+                    HerbivorousFauna testTrout = new HerbivorousFauna("Trout", 1, 1, 1, 1, 1);
+                    testList.Add(testTrout);
                     // For at se om den er tilføjet.
                     Console.WriteLine(testList[0].name);
-                    break;
-                case "xfish":
-                    break;
-                case "xflora":
                     break;
                 default:
                     break;
@@ -59,7 +55,7 @@ namespace EcosystemGame
         public class HerbivorousFauna : FloraFaunaItem
         {
             // Uses the base constructor from FloraFaunaItem. 
-            public HerbivorousFauna(string Name, int MinimumOxygen, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
+            public HerbivorousFauna(string Name, int MinimumOxygen, int RequiredNutrition, int releasedOxygen, int maxHealth, int reproduceLevel) : base(Name, MinimumOxygen, RequiredNutrition, releasedOxygen, maxHealth, reproduceLevel)
             {
 
             }
@@ -79,7 +75,7 @@ namespace EcosystemGame
         private class CarnivorousFauna : FloraFaunaItem
         {
             // Here the base constructor from FloraItem is used, since this is shared for all flora and fauna.
-            private CarnivorousFauna(string Name, int MinimumOxygen, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
+            private CarnivorousFauna(string Name, int MinimumOxygen, int RequiredNutrition, int releasedOxygen, int maxHealth, int reproduceLevel) : base(Name, MinimumOxygen, RequiredNutrition, releasedOxygen, maxHealth, reproduceLevel)
             {
 
             }
@@ -103,7 +99,7 @@ namespace EcosystemGame
 
         private class Flora : FloraFaunaItem
         {
-            private Flora(string Name, int MinimumOxygen, int RequiredNutrition) : base(Name, MinimumOxygen, RequiredNutrition)
+            private Flora(string Name, int MinimumOxygen, int RequiredNutrition, int releasedOxygen, int maxHealth, int reproduceLevel) : base(Name, MinimumOxygen, RequiredNutrition, releasedOxygen, maxHealth, reproduceLevel)
             {
 
             }
