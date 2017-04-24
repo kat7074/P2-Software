@@ -27,5 +27,8 @@ namespace EcosystemGame
         public virtual int requiredNutrition { get; }
         public virtual int releasedOxygen { get; }
         public virtual int maxHealth { get; }
+
+        public abstract void Feed();
+        public abstract void Multiply();
     }
 }

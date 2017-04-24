@@ -15,15 +15,20 @@ namespace EcosystemGame
         // It will also remove any fish that is below zero health. 
         public void UpdateFloraAndFauna()
         {
-            foreach (var item in testList)
+            // Kører igennem listen med et loop som kører for hvert individuelt element.
+            // testList.ToList() er indsat, da programmet ellers vil komme med en error hvis man fjerner elementer undervejs.
+            foreach (var item in testList.ToList())
             {
                 if (item.health < 0)
                 {
                     testList.Remove(item);
+                    // For at underrette spilleren om at fisk X er død.
+                    Console.WriteLine("En " + item.name + " er død");
                 }
                 else
                 {
-                    
+                    item.Feed();
+                    item.Multiply();
                 }
             }
         }
@@ -44,7 +49,7 @@ namespace EcosystemGame
                     // Console.WriteLine(testList[0].name);
                     break;
                 case "perch":
-                    // Kan kategoriseres som både herbivore og carnivore? :o
+                    // Kategoriseres som Omnivore, ved senere brug.
                     break;
                 case "trout":
                     // Det nedstående er en test, for at tilføje en trout til listen. 1,1 er bare placeholder værdier.
@@ -88,15 +93,15 @@ namespace EcosystemGame
             // Uses the base constructor from FloraFaunaItem. 
             public HerbivorousFauna(string Name, int MinimumOxygen, int RequiredNutrition, int releasedOxygen, int maxHealth, int reproduceLevel) : base(Name, MinimumOxygen, RequiredNutrition, releasedOxygen, maxHealth, reproduceLevel)
             {
-
+                
             }
 
-            private void Feed()
+            public override void Feed()
             {
 
             }
 
-            private void Multiply()
+            public override void Multiply()
             {
 
             }
@@ -111,12 +116,12 @@ namespace EcosystemGame
 
             }
 
-            private void Feed()
+            public override void Feed()
             {
 
             }
 
-            private void Multiply()
+            public override void Multiply()
             {
                 
             }
@@ -135,12 +140,12 @@ namespace EcosystemGame
 
             }
 
-            private void Feed()
+            public override void Feed()
             {
 
             }
 
-            private void Multiply()
+            public override void Multiply()
             {
 
             }

@@ -15,6 +15,5 @@ namespace EcosystemGame
         int reproduceLevel { get; }
         int requiredNutrition { get; }
         int releasedOxygen { get; }
-        
     }
 }
