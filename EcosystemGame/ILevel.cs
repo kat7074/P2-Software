@@ -26,4 +26,8 @@ namespace EcosystemGame
 /* tror at denne metode virker til range
         [Range(1,14)]
         public int size { get; set; }
+
+        
+        [MinValue(1), MaxValue(14)]
+        public int size { get; set; }
 */
